@@ -1,0 +1,187 @@
+
+<html>
+<!-- Linked to styleHomepage.css -->
+<!-- Linked to Roboto font on Google Font -->
+
+<html>
+
+    <head>
+        <Title>Homepage</Title>
+        <meta name="viewport" content="user-scalable=no">
+        <link href = "styleHomepage.css" type = "text/css" rel = "stylesheet">
+        <link href = "clock.scss" type = "text/css" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css?family=Roboto:400,700" rel = "stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--<script src = "background.js"></script>-->
+        <script src = "clock.js"></script>
+    </head>
+
+    
+
+    <body style="background-color: rgb(2, 2, 2);">
+        <div id="clock"></div>
+
+        <center><!--<button onclick = "changeImage()" class="button" type = "button">Change Image</button>-->
+        <a href="new.html"><button class="button" type="button">Explore</button></a>
+        </center>
+        <br/>
+        <br/>
+        <br/>
+       
+
+        <div class="searchbar">
+        <center><form id="frmSearch" class="search" />
+            <input class="round" id="txtSearch"  type="text" placeholder= "Select Search Engine after Typing Query" name="search_bar" size="45" maxlength="255"        
+               value="" style=" width: 60%; height: 100px;background-color: rgb(22, 21, 21);font-size: 30px;color: white;box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+              "/></center>
+        </center>
+           </div>
+           <br/>
+            <br/>
+            <br/>
+            <center><td>
+            <select name="Search Engines" class="round" id="se" onchange="location = this.value + document.getElementById('txtSearch').value;" style="height: 60px;background-color: rgb(22, 21, 21);font-size: 25px; color: white;">
+            <option value="#">Select Search Engine</option> 
+           <option id="google" value="https://www.google.com/search?q=">Google</option>
+           <option id="duckduckgo" value="https://www.duckduckgo.com/?q=">Duckduckgo</option>
+           <option id="bing" value="https://www.bing.com/?q=">Bing</option>
+           <option id="yahoo" value="https://in.search.yahoo.com/search?p=">Yahoo</option>
+           <option id="yandex" value="https://yandex.com/search/?text=">Yandex</option>
+           <option id="ask" value="https://www.ask.com/web?q=">Ask</option>
+           <option id="excite" value="https://results.excite.com/serp?q=">Excite</option>
+           <option id="aol" value="https://search.aol.com/aol/search?q=">Aol</option>
+           <option id="url" value="">URL(First Enter URL in Search Bar)</option>
+            </select>
+        </td></center>
+            <br/>
+            <br/>
+            <br/>
+       
+       
+       
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <center><a href="covid.html"><button class="button" id="myButton">Find Vaccination Center</button></a></center>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="nearby-vaccine-centres-mapmyindia"></div>
+  </div>
+
+</div>
+        <br/>
+        <br/>
+        <center>
+            <div class="notice">
+            <p style="font-size: 36px;">How to Search in WvB?</p>
+            <p style="font-size: 28px">
+                The Submit Function will not work in WvB. After Entering your Query in Searchbox, just Select the Search Engine you want to Search in.   
+            </p>
+            <hr>
+            <p style="font-size: 36px;">Why WvB?</p>
+            <p style="font-size: 28px;">
+              - Less in Size<br/>
+              - Does not Store your Browsing History<br/>
+              - Complete Incognito Browsing<br/>
+              - Open Source<br/>
+            </p>
+            <hr>
+            <p style="font-size: 36px;">What is WvB?</p>
+            <p style="font-size: 28px;">
+              WvB is a Webview Browser. As mentioned its a Webview Implementation working as a Browser. Its Totally Safe as its a System Webview.
+              You will have to update your System Webview frequently from Play Store to keep up the Performance of Webview.
+            </p>
+        </div>    
+        </div>
+        <br/>
+       
+    
+        
+        <center>
+
+        <iframe src="icons.html" frameborder="0" height="1000px" width="100%"></iframe>
+       
+       
+        <br/>
+
+        <center><p style="font-size: 32px;color: white;">Book your Vaccination Slot Now</p></center>
+          <a href="https://www.cowin.gov.in/"><img src="cowin.png" alt="cowin" width="100%" height="35%"></a>
+       
+       
+       
+          <div class="reference">
+            <center>
+            <h1>WvB- Incognito by Default</h1>
+            <a href="https://github.com/pvp-1607/Android-Webview--Mini-Browser"><i class="fa fa-github" style="font-size:48px">Github</i></a>
+            </center>
+          </div>
+        
+       
+    </body>
+
+    
+
+
+    <script>
+        function myFunction() {
+        document.getElementById('txtSearch').style.width = "80%";
+        }
+    </script>
+
+
+    
+
+    <script type="text/javascript">
+        loadNearbyCovidCentresMapmyIndiaDiv(document.getElementById("nearby-vaccine-centres-mapmyindia"),{category1:'HSPSCC'});
+        </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+    
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myButton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>

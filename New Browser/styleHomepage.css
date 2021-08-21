@@ -1,0 +1,393 @@
+/* Linked to Homepage.html */
+
+.hameid-loader-overlay {
+  width: 100%;
+  height: 100%;
+  background: url('new-logo.png') center No-repeat rgb(2, 2, 2);;
+  z-index: 99999;
+  position: fixed;
+}
+
+* { 
+    font-family: Roboto, "Arial Black", sans-serif;
+}
+
+html{
+  background-image: url('Background/9.jpg') center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    /*float: left;*/
+    padding: 20px 10px;
+    clear: both;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  /*.row {margin: 0 -5px;}*/
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns 
+  @media screen and (max-width: 90%) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      clear: both;
+    }
+  }*/
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 12px 18px 0 rgba(230, 12, 12, 0.2);
+    padding: 16px;
+    text-align: center;
+    color: orange;
+    background-color: rgb(59, 57, 57);
+    width: 99%;
+  }
+
+#clock {
+    font-size: 500%;
+    text-align: center;
+    color: rgb(224, 93, 16);
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+
+
+.container{
+  display: inline-flex;
+  width: 50%;
+}
+
+.row1 {
+  display: flex;
+}
+
+.column1{
+  width: 200%;
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+.button {
+    background-color: rgb(240, 75, 10);
+    color: white;
+    border-color: grey;
+    width: 25%;
+    font-size: 40px;
+    top: -20%;
+    left: -40%;
+    bottom: -80%;
+    right: -40%;
+    border-radius: 100px;
+}
+
+.button1{
+    background-color: #e9650d;
+    font-size: 40px;
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+    text-align: justify;
+}
+
+.line{
+  color: orange;
+  padding: 1px;
+  width: 50%;
+  border-style: dashed;
+  line-height: 20px;
+}
+
+.games{
+  box-shadow: 0 4px 8px 0 rgba(219, 125, 48, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(31, 29, 29);
+  color: orange;
+  width: 95%;
+}
+
+.vr{
+  border: 3px solid orange;
+}
+
+.game{
+  color: orangered;
+  background-color: black;
+  border-bottom: 3px;
+  border-bottom-color: orange;
+  border-top: 8px;
+  border-top-color: orange;
+  }
+
+  .header{
+    top: 0px;
+    z-index: 1;
+    padding: 40px;
+    background-color: orangered;
+    border-bottom-color: rgb(240, 11, 11);
+    border-bottom-style: solid;
+    border-bottom: 5px;
+    position: sticky;
+    margin-top: -0.5;
+    width: 100%;
+  }
+
+ 
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 39, 39);
+    background-color: rgba(41, 39, 39);
+    transition: 0.5s;
+    scroll-behavior: smooth;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .box{
+    background-color: orange;
+    width: 95%;
+    border: 5px solid rgb(26, 27, 26);
+    padding: 50px;
+    margin: 20px;
+  }
+
+  
+    
+  .bottomtext{
+    bottom: 0;
+    left: 45%;
+    position: static;
+    text-align: center;
+    font-size: 48px;
+    color: #d6370f;
+  }
+
+   .round {
+    border-radius: 15px;
+    border-bottom: 3px rgb(241, 114, 10) solid;
+    border-top: 3px rgb(241, 114, 10) solid;
+    border-left: 3px rgb(241, 114, 10) solid;
+    border-right: 3px rgb(241, 114, 10) solid;
+    padding: 5px 5px 5px 25px;
+}
+
+/*.corner {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    max-width: 100%;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #000; /* Set the bg image here. with "no-repeat" */
+
+
+.bottombar{
+  bottom: 0;
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  background-color: #f17f13;
+  color: white;
+  font-size: 64px;
+}
+
+
+  
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav {
+  display: inline-block;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.formright {
+   display:inline-block;
+   float: right;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 90%; 
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+
+/* The Close Button */
+.close {
+  color: #ee670d;
+  float: right;
+  top: 0;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather {
+  height: 300px;
+  width: 40%;
+  background-color: rgb(190, 202, 192);
+  text-align: center;
+  border-radius: 16px;
+  border: 2px solid rgb(14, 43, 1);
+  bottom: 0%;
+  right: 0%;
+}
+
+.a{
+  color: #d6370f;
+}
+
+body {
+  background: #212129;
+}
+
+::selection {
+  background: #212129;
+}
+
+.figcaption{
+  font-size: 32px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.scrollmenu {
+  background-color: #151618;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior: unset;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: red;
+}
+
+#nearby-vaccine-centres-mapmyindia{
+  width: 100%;
+  height: 99%;}
+
+.notice{
+  background-color: rgb(255, 123, 0);
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5%;
+  width: 98%;
+}
+
+.reference{
+  bottom: 0;
+  padding: 40px;
+  background-color: #212129;
+  color: white;
+  width: 100%;
+}
+
+ 
